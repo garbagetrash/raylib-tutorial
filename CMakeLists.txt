@@ -41,3 +41,7 @@ target_compile_definitions(heightmap PRIVATE RESOURCES_DIR="${RESOURCES_DIR}")
 add_executable(shaders-raymarching src/shaders-raymarching.c)
 target_link_libraries(shaders-raymarching PRIVATE raylib)
 target_compile_definitions(shaders-raymarching PRIVATE RESOURCES_DIR="${RESOURCES_DIR}")
+
+add_executable(background-scrolling src/background-scrolling.c)
+target_link_libraries(background-scrolling PRIVATE raylib)
+target_compile_definitions(background-scrolling PRIVATE RESOURCES_DIR="${RESOURCES_DIR}")
